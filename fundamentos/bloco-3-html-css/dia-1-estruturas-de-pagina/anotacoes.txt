@@ -1,1 +1,25 @@
+<<<<<<< HEAD
 a
+=======
+Estrutura de Tags
+
+<nomeTag atributo="valor">
+	conteúdo da tag
+</nomeTag>
+
+Exemplo:
+<p id="texto">
+	Hello World!
+</p>
+
+#######################################
+<head>
+	<meta charset="UTF-8"> ##Espaço destinado a especificar o charset dos caracteres utilizados no respectivo documento. UTF-8 é padrão para pt-br e en-us##
+	
+	<title>Titulo da página</title> ## Especifica o titulo da página (oque vai aparecer escrito na aba do navegador) e facilita a procura das páginas para os mecanismos de busca online##
+	
+</head> ## O Head não adiciona elementos na tela, ele diz respeito as configurações do seu arquivo HTML, como configurações relacionadas a CSS e JavaScript, por exemplo ##
+
+
+
+>>>>>>> 4e74e5bd0ab3e4d6d727d77f1dcb4101743bdda3
