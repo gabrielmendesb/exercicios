@@ -1,0 +1,48 @@
+para criar um arquivo.txt e gerar um input na tela para digitar o valor 
+cat > arquivo.txt
+
+para adicionar linhas a um arquivo.txt através de um input na tela
+cat >> arquivo.txt
+
+para juntar dois arquivos em um terceiro arquivo.txt
+cat arquivo1.txt arquivo2.txt > arquivo3.txt
+
+sort < arquivo.txt	exibe o arquivo com as linhas listadas em ordem(primeiro linhas começadas em numeros depois ordem alfabética) 
+
+sort > arquivo.txt 	cria um arquivo com aquele nome, recebe os dados em um input e os coloca em ordem listada acima
+
+
+
+D = D 		-- no início da sequencia indica um diretório
+- = hífen 	-- no início da sequencia indica um arquivo comum
+--
+R = read 	-- leitura permitida do arquivo ou diretório
+W = write 	-- editar um arquivo ou modificar o conteúdo de um diretório
+X = execute 	-- nos permite executar um arquivo ou acessar um diretóio pelo comando cd
+
+
+p/ alterar as permissões do arquivo
+
+chmod u-rwx arquivo.txt	-- retirar as permissoes do proprio usuario
+chmod u+rwx arquivo.txt	-- adicionar permissões ao proprio usuario
+
+chmod g-rwx arquivo.txt	-- retirar as permissoes do grupo de usuários sobre o arquivo
+chmod g+rwx arquivo.txt	-- adicionar permissões ao grupo de usuários sobre o arquivo
+
+chmod o-rwx arquivo.txt	-- retirar as permissoes de outros usuarios sobre o arquivo
+chmod o+rwx arquivo.txt	-- adicionar permissões a outros usuarios sobre o arquivo
+
+chmod a-rwx arquivo.txt	-- retirar as permissoes de todos os usuarios sobre o arquivo
+chmod a+rwx arquivo.txt	-- adicionar permissões a todos os usuarios sobre o arquivo
+
+
+comando find
+
+# Para listar todos os arquivos que terminam em .txt
+find . -name "*.txt"
+
+# Para localizar todos os diretórios
+find . -type d
+
+# Para localizar todos os arquivos
+find . -type f
