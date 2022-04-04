@@ -1,9 +1,9 @@
-ol li {
-	background-color: #00ff00;
+ol {
+	background-color: yellow;
 }
 
-ol li:nth-last-child(even) {
-	color: red;
+ol li:nth-child(even) {
+	color: #0f0;
 }
 
 ol li:nth-child(odd) {
@@ -15,9 +15,10 @@ h3 {
 	color: red;
 }
 
-h1 em {
+h1 em,
+h3 em {
 	font-size: 40px;
-	border: 1px solid blue;
+	border: 1px solid black;
 }
 
 li {
@@ -28,30 +29,30 @@ li em {
 	font-weight: bold;
 }
 
-ul:first-of-type li:nth-child(-n+3) {
-    color: #00ff00;
-}
-li.java {
-    background-color: salmon;
+ul:first-of-type li {
+	color: blue;
 }
 
-ul li a:hover {
-    background-color: red;
-    font-style: italic;
+ul:first-of-type li.java {
+	background-color: salmon;
 }
 
-ul:nth-child(2) li a:nth-child(2){
-
+ul:nth-of-type(2) li:hover:nth-of-type(1) {
+	background-color: orange;
 }
 
-ul:nth-child(2) li a:nth-child(3){
-
+ul:nth-of-type(2) li:hover:nth-of-type(2) {
+	background-color: #0f0;
 }
 
-ul:nth-child(2) li a:nth-child(4){
-
+ul:nth-of-type(2) li:hover:nth-of-type(3) {
+	background-color: black;
 }
 
-ul:nth-child(2) li a:nth-child(5){
+ul:nth-of-type(2) li:hover:nth-of-type(4) {
+	background-color: yellow;
+}
 
+ul:nth-of-type(2) li:hover:nth-of-type(5) {
+	background-color: green;
 }
